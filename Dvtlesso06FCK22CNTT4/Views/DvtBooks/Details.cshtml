@@ -1,0 +1,74 @@
+﻿@model Dvtlesso06FCK22CNTT4.Models.BhpBook
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BhpBook</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtBookId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtBookId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtAuthor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtAuthor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtPulisher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtPulisher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtPicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtPicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtcategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtcategoryId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BhpId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

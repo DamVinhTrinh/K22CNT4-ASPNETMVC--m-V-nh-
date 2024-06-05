@@ -1,0 +1,80 @@
+﻿@model Dvtlesso06FCK22CNTT4.Models.BhpBook
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DvtBook</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtBookId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtBookId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtAuthor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtAuthor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtPulisher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtPulisher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtPicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtPicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DvtcategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DvtcategoryId)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

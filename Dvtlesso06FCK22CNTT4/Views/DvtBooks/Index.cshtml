@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Dvtlesso06FCK22CNTT4.Models.BhpBook>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DvtBookId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DvtTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DvtAuthor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DvtYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DvtPulisher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DvtPicture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DvtcategoryId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DvtBookId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DvtTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DvtAuthor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DvtYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DvtPulisher)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DvtPicture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DvtcategoryId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DvtId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DvtId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DvtId })
+        </td>
+    </tr>
+}
+
+</table>
